@@ -460,12 +460,12 @@ a.remove{display:inline-block; width:11px; height:11px; background:url(../images
 
 .mark-name.current{
     position:absolute;
-    padding:10px;
+    padding:0;
     -webkit-border-radius:6px;
     -moz-border-radius:6px;
     border-radius:6px;
     background:#fff;
-    width:170px;
+    width:190px;
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 1px 1px rgba(0, 0, 0, 0.2);;
     -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 1px 1px rgba(0, 0, 0, 0.2);;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -484,6 +484,55 @@ a.remove{display:inline-block; width:11px; height:11px; background:url(../images
     background:url(../images/gallery-bubble-tail.png) 0 0 no-repeat;
     left:15px;
     top:-8px;
+}
+
+.mark-name.current .input-text {
+	margin:5px;
+}
+
+.mark-name .ui-autocomplete {
+	position:relative;
+	border:none;
+	border-top:1px solid #cccccc;	
+	top:0 !important;
+	left:0 !important;
+	width:189px;
+	overflow-x: scroll;
+	max-height:300px;	
+}
+
+.mark-name li.ui-autocomplete-category {
+	clear:left;
+	border-top:1px solid #e1e1e1;
+	border-bottom:1px solid #e1e1e1;
+	color:#8b8a8a;
+	padding:3px 7px;
+	background: #f5f5f5;
+	background: -moz-linear-gradient(top,  #fbfbfc 0%, #f0f2f5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbfbfc), color-stop(100%,#f0f2f5));
+	background: -webkit-linear-gradient(top,  #fbfbfc 0%,#f0f2f5 100%);
+	background: -o-linear-gradient(top,  #fbfbfc 0%,#f0f2f5 100%);
+	background: -ms-linear-gradient(top,  #fbfbfc 0%,#f0f2f5 100%);
+	background: linear-gradient(top,  #fbfbfc 0%,#f0f2f5 100%);
+	font-size:11px;
+}
+
+.mark-name .ui-menu-item a {
+	font-size:12px;
+	color:#70aae0;
+	font-weight:bold;
+	padding:5px 7px 5px 23px;	
+	background:#FFF url('../images/icons.gif') 8px -102px no-repeat;
+	cursor:pointer;
+}
+
+.mark-name .ui-menu-item a.ui-state-hover,
+.mark-name .ui-menu-item a:hover {
+	background:#70aae0 url('../images/icon-user-white.gif') 8px 8px no-repeat;	
+	color:#fff;
+	font-weight:bold;
+	margin:0;
+	border:none !important;
 }
 
 #album-images-admin .topic-photo-upload-rules object {
@@ -532,7 +581,7 @@ a.remove{display:inline-block; width:11px; height:11px; background:url(../images
     margin-right: 10px;
 }
 
-.autocomplete-mark {width: 165px;}
+.autocomplete-mark {width: 180px;}
 
 #album-images li,
 #albums li{
